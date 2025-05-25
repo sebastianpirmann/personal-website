@@ -3,7 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Mail, Menu, X } from "lucide-react"
+import { Mail, Menu, X, MoveLeft } from "lucide-react"
 import Image from "next/image"
 
 export function Navigation() {
