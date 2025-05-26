@@ -20,6 +20,7 @@ import {
   Heart,
   Trophy,
   Medal,
+  Laptop,
 } from "lucide-react"
 import Link from "next/link"
 
@@ -31,13 +32,6 @@ export default function CVPage() {
           <div className="space-y-8">
             {/* Header */}
             <div className="text-center">
-              <div className="w-20 h-20 mx-auto mb-6 overflow-hidden rounded-full">
-                <img
-                  src="/images/profile_image.png"
-                  alt="Dr. Sebastian Pirmann"
-                  className="w-full h-full object-cover"
-                />
-              </div>
               <p className="text-lg text-slate-400 max-w-2xl mx-auto">
                 Bioinformatics Data Scientist with expertise in Pipeline Development, Omics-Data Analysis, Machine Learning, and AI
               </p>
@@ -61,7 +55,7 @@ export default function CVPage() {
                   </div>
                   <div className="space-y-6 pl-16">
                     {/* Current Role */}
-                    <Card className="border-l-4 border-white/20 bg-slate-800/50 backdrop-blur-sm hover:translate-y-[-4px] hover:translate-x-[-4px] transition-all duration-300 shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)] hover:shadow-[12px_12px_24px_0px_rgba(0,0,0,0.5)]">
+                    <Card className="border-l-4 border-white/20 bg-slate-800/50 backdrop-blur-sm shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)]">
                       <CardHeader className="pb-2">
                         <CardTitle className="text-white">Bioinformatics Data Scientist</CardTitle>
                         <CardDescription>
@@ -81,11 +75,15 @@ export default function CVPage() {
                           <ul className="space-y-2 text-sm text-slate-300">
                             <li className="flex items-start gap-2">
                               <div className="rounded-full w-1.5 h-1.5 bg-sky-400 mt-2" />
-                              Leading the development of machine learning models for drug response prediction in cancer therapy.
+                              Developing and maintaining pipelines and software scripts for multi-omics data processing from next-generation sequencing technologies and performing downstream analyses.
                             </li>
                             <li className="flex items-start gap-2">
                               <div className="rounded-full w-1.5 h-1.5 bg-sky-400 mt-2" />
-                              Implementing cloud-based bioinformatics pipelines for multi-omics data analysis.
+                              Conducting pharmacogenomics research projects in collaboration with the Institute of Clinical Pharmacology, Stuttgart.
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <div className="rounded-full w-1.5 h-1.5 bg-sky-400 mt-2" />
+                              Contributing to research projects and precision oncology studies on rare cancers at NCT Heidelberg.
                             </li>
                           </ul>
                         </div>
@@ -93,7 +91,7 @@ export default function CVPage() {
                     </Card>
 
                     {/* PhD Role */}
-                    <Card className="border-l-4 border-white/20 bg-slate-800/50 backdrop-blur-sm hover:translate-y-[-4px] hover:translate-x-[-4px] transition-all duration-300 shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)] hover:shadow-[12px_12px_24px_0px_rgba(0,0,0,0.5)]">
+                    <Card className="border-l-4 border-white/20 bg-slate-800/50 backdrop-blur-sm shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)]">
                       <CardHeader className="pb-2">
                         <CardTitle className="text-white">Bioinformatician / PhD Researcher</CardTitle>
                         <CardDescription>
@@ -117,11 +115,15 @@ export default function CVPage() {
                             </li>
                             <li className="flex items-start gap-2">
                               <div className="rounded-full w-1.5 h-1.5 bg-sky-400 mt-2" />
-                              Analyzed and integrated pharmacogenomic data from more than 2,500 cancer patients, uncovering tumor-specific activity of pharmacogenes for my PhD thesis.
+                              Analyzed and integrated next-generation sequencing data from more than 2,500 cancer patients, uncovering tumor-specific activity of pharmacogenes for my PhD thesis.
                             </li>
                             <li className="flex items-start gap-2">
                               <div className="rounded-full w-1.5 h-1.5 bg-sky-400 mt-2" />
                               Contributed to several multi-omics analyses of rare cancers including parathyroid carcinomas, adrenocortical carcinomas, and chordomas.
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <div className="rounded-full w-1.5 h-1.5 bg-sky-400 mt-2" />
+                              Supervised Master Students in Bioinformatics Projects
                             </li>
                           </ul>
                         </div>
@@ -138,7 +140,7 @@ export default function CVPage() {
                     <p className="font-medium">Karolinska Institutet</p>
                   </div>
                   <div className="pl-16">
-                    <Card className="border-l-4 border-white/20 bg-slate-800/50 backdrop-blur-sm hover:translate-y-[-4px] hover:translate-x-[-4px] transition-all duration-300 shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)] hover:shadow-[12px_12px_24px_0px_rgba(0,0,0,0.5)]">
+                    <Card className="border-l-4 border-white/20 bg-slate-800/50 backdrop-blur-sm shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)]">
                       <CardHeader className="pb-2">
                         <CardTitle className="text-white">Visiting PhD Researcher</CardTitle>
                         <CardDescription>
@@ -158,7 +160,7 @@ export default function CVPage() {
                           <ul className="space-y-2 text-sm text-slate-300">
                             <li className="flex items-start gap-2">
                               <div className="rounded-full w-1.5 h-1.5 bg-sky-400 mt-2" />
-                              Collaborated on international research project for pharmacogenomic variant effect prediction.
+                              Contributed to the development and application of APF2, an advanced ensemble learning method for pharmacogenomic variant effect prediction
                             </li>
                           </ul>
                         </div>
@@ -175,9 +177,9 @@ export default function CVPage() {
                     <p className="font-medium">DKFZ German Cancer Research Center</p>
                   </div>
                   <div className="pl-16">
-                    <Card className="border-l-4 border-white/20 bg-slate-800/50 backdrop-blur-sm hover:translate-y-[-4px] hover:translate-x-[-4px] transition-all duration-300 shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)] hover:shadow-[12px_12px_24px_0px_rgba(0,0,0,0.5)]">
+                    <Card className="border-l-4 border-white/20 bg-slate-800/50 backdrop-blur-sm shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)]">
                       <CardHeader className="pb-2">
-                        <CardTitle className="text-white">Research Assistant / Master Student</CardTitle>
+                        <CardTitle className="text-white">Research Assistant</CardTitle>
                         <CardDescription>
                           <div className="flex items-center gap-2 text-sm text-slate-400">
                             <Calendar className="w-4 h-4" />
@@ -195,7 +197,11 @@ export default function CVPage() {
                           <ul className="space-y-2 text-sm text-slate-300">
                             <li className="flex items-start gap-2">
                               <div className="rounded-full w-1.5 h-1.5 bg-sky-400 mt-2" />
-                              Researched and implemented classical and deep learning based models for real-time tissue tracking in laparoscopic imaging.
+                              Researched and implemented classical and deep learning based methods for real-time tissue tracking in laparoscopic imaging.
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <div className="rounded-full w-1.5 h-1.5 bg-sky-400 mt-2" />
+                              Implemented a CNN based tracking algorithms for multispectral laparoscopic imaging as part of my Master Thesis.
                             </li>
                           </ul>
                         </div>
@@ -213,9 +219,9 @@ export default function CVPage() {
                   </div>
                   <div className="space-y-6 pl-16">
                     {/* Bachelor Student */}
-                    <Card className="border-l-4 border-white/20 bg-slate-800/50 backdrop-blur-sm hover:translate-y-[-4px] hover:translate-x-[-4px] transition-all duration-300 shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)] hover:shadow-[12px_12px_24px_0px_rgba(0,0,0,0.5)]">
+                    <Card className="border-l-4 border-white/20 bg-slate-800/50 backdrop-blur-sm shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)]">
                       <CardHeader className="pb-2">
-                        <CardTitle className="text-white">Working Student (Bachelor Thesis)</CardTitle>
+                        <CardTitle className="text-white">Working Student</CardTitle>
                         <CardDescription>
                           <div className="flex items-center gap-2 text-sm text-slate-400">
                             <Calendar className="w-4 h-4" />
@@ -230,7 +236,7 @@ export default function CVPage() {
                           <ul className="space-y-2 text-sm text-slate-300">
                             <li className="flex items-start gap-2">
                               <div className="rounded-full w-1.5 h-1.5 bg-sky-400 mt-2" />
-                              Developed C++ backend logic and Qt user interfaces for electronic case report forms in the mint lesion radiology software.
+                              Developed C++ backend logic and Qt user interfaces for electronic case report forms in the mint lesion radiology software as part of my Bachelor Thesis
                             </li>
                           </ul>
                         </div>
@@ -238,7 +244,7 @@ export default function CVPage() {
                     </Card>
 
                     {/* Mint Medical Intern */}
-                    <Card className="border-l-4 border-white/20 bg-slate-800/50 backdrop-blur-sm hover:translate-y-[-4px] hover:translate-x-[-4px] transition-all duration-300 shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)] hover:shadow-[12px_12px_24px_0px_rgba(0,0,0,0.5)]">
+                    <Card className="border-l-4 border-white/20 bg-slate-800/50 backdrop-blur-sm shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)]">
                       <CardHeader className="pb-2">
                         <CardTitle className="text-white">Software Development Intern</CardTitle>
                         <CardDescription>
@@ -280,7 +286,7 @@ export default function CVPage() {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 {/* Soft Skills */}
-                <Card className="border-l-4 border-white/20 bg-slate-800/50 backdrop-blur-sm h-full hover:translate-y-[-4px] hover:translate-x-[-4px] transition-all duration-300 shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)] hover:shadow-[12px_12px_24px_0px_rgba(0,0,0,0.5)]">
+                <Card className="border-l-4 border-white/20 bg-slate-800/50 backdrop-blur-sm h-full shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)]">
                   <CardHeader className="pb-4">
                     <CardTitle className="text-white flex items-center gap-2 text-lg">
                       <Brain className="w-5 h-5 text-sky-400" />
@@ -294,7 +300,7 @@ export default function CVPage() {
                         </li>
                         <li className="flex items-start gap-2">
                           <div className="rounded-full w-1.5 h-1.5 bg-sky-400 mt-2" />
-                          Interdisciplinary collaboration and effective communication
+                          Interdisciplinary collaboration and effective communication in an international environment
                         </li>
                         <li className="flex items-start gap-2">
                           <div className="rounded-full w-1.5 h-1.5 bg-sky-400 mt-2" />
@@ -308,13 +314,17 @@ export default function CVPage() {
                           <div className="rounded-full w-1.5 h-1.5 bg-sky-400 mt-2" />
                           Continuous learning & mentoring
                         </li>
+                        <li className="flex items-start gap-2">
+                          <div className="rounded-full w-1.5 h-1.5 bg-sky-400 mt-2" />
+                          Consulting in life science and technology
+                        </li>
                       </ul>
                     </CardContent>
                   </CardHeader>
                 </Card>
 
                 {/* Technical Skills */}
-                <Card className="border-l-4 border-white/20 bg-slate-800/50 backdrop-blur-sm h-full hover:translate-y-[-4px] hover:translate-x-[-4px] transition-all duration-300 shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)] hover:shadow-[12px_12px_24px_0px_rgba(0,0,0,0.5)]">
+                <Card className="border-l-4 border-white/20 bg-slate-800/50 backdrop-blur-sm h-full shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)]">
                   <CardHeader className="pb-4">
                     <CardTitle className="text-white flex items-center gap-2 text-lg">
                       <Code2 className="w-5 h-5 text-sky-400" />
@@ -324,7 +334,7 @@ export default function CVPage() {
                       <ul className="space-y-2 text-slate-300 text-sm">
                         <li className="flex items-start gap-2">
                           <div className="rounded-full w-1.5 h-1.5 bg-sky-400 mt-2" />
-                          Programming and data processing (R, Python, C++, Bash, Nextflow)
+                          Programming, data processing, and analysis (R, Python, C++, Bash, Nextflow)
                         </li>
                         <li className="flex items-start gap-2">
                           <div className="rounded-full w-1.5 h-1.5 bg-sky-400 mt-2" />
@@ -332,7 +342,7 @@ export default function CVPage() {
                         </li>
                         <li className="flex items-start gap-2">
                           <div className="rounded-full w-1.5 h-1.5 bg-sky-400 mt-2" />
-                          Development and Automation of pipelines in HPC environments (IBM LSF)
+                          Development and automation of pipelines in HPC environments (IBM LSF)
                         </li>
                         <li className="flex items-start gap-2">
                           <div className="rounded-full w-1.5 h-1.5 bg-sky-400 mt-2" />
@@ -344,21 +354,21 @@ export default function CVPage() {
                 </Card>
 
                 {/* Areas of Interest */}
-                <Card className="border-l-4 border-white/20 bg-slate-800/50 backdrop-blur-sm h-full hover:translate-y-[-4px] hover:translate-x-[-4px] transition-all duration-300 shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)] hover:shadow-[12px_12px_24px_0px_rgba(0,0,0,0.5)]">
+                <Card className="border-l-4 border-white/20 bg-slate-800/50 backdrop-blur-sm h-full shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)]">
                   <CardHeader className="pb-4">
                     <CardTitle className="text-white flex items-center gap-2 text-lg">
-                      <Database className="w-5 h-5 text-sky-400" />
+                      <Laptop className="w-5 h-5 text-sky-400" />
                       Areas of Interest
                     </CardTitle>
                     <CardContent className="pt-2 px-0">
                       <ul className="space-y-2 text-slate-300 text-sm">
                         <li className="flex items-start gap-2">
                           <div className="rounded-full w-1.5 h-1.5 bg-sky-400 mt-2" />
-                          Advanced statistics, Machine Learning, and AI (Multivariate Regression, Random Forests, Neural Networks)
+                          Statistics, Machine Learning, and AI (e.g. Multivariate Regression, Random Forests, Neural Networks, LLMs)
                         </li>
                         <li className="flex items-start gap-2">
                           <div className="rounded-full w-1.5 h-1.5 bg-sky-400 mt-2" />
-                          Reserach on Cancer Genomics, Transcriptomics, Epi-/Pharmacogenomics
+                          Research on Cancer Genomics, Epigenomics, Pharmacogenomics, and Transcriptomics
                         </li>
                         <li className="flex items-start gap-2">
                           <div className="rounded-full w-1.5 h-1.5 bg-sky-400 mt-2" />
@@ -375,6 +385,31 @@ export default function CVPage() {
               </div>
             </section>
 
+            {/* Voluntary Work */}
+            <section>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center">
+                  <Heart className="w-6 h-6 text-white" />
+                </div>
+                <h2 className="text-2xl font-bold text-white">Voluntary Work</h2>
+              </div>
+              <div className="space-y-4">
+                <Card className="border-l-4 border-white/20 bg-slate-800/50 backdrop-blur-sm shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)]">
+                  <CardHeader className="pb-4">
+                    <CardTitle className="text-white">Board Member and Consultant</CardTitle>
+                    <CardDescription>
+                      <div className="flex items-center gap-2 text-sm text-slate-400">
+                        <Calendar className="w-4 h-4" />
+                        December 2024 - Present
+                        <Building2 className="w-4 h-4 ml-2" />
+                        DKFZ Consulting Club
+                      </div>
+                    </CardDescription>
+                  </CardHeader>
+                </Card>
+              </div>
+            </section>
+            
             {/* Education */}
             <section>
               <div className="flex items-center gap-3 mb-4">
@@ -385,7 +420,7 @@ export default function CVPage() {
               </div>
               <div className="space-y-4">
                 {/* PhD */}
-                <Card className="border-l-4 border-white/50 bg-slate-800/50 backdrop-blur-sm hover:translate-y-[-4px] hover:translate-x-[-4px] transition-all duration-300 shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)] hover:shadow-[12px_12px_24px_0px_rgba(0,0,0,0.5)]">
+                <Card className="border-l-4 border-white/50 bg-slate-800/50 backdrop-blur-sm shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)]">
                   <CardHeader className="pb-4">
                     <CardTitle className="text-white">Ph.D. (Dr. rer. nat.) Bioinformatics</CardTitle>
                     <CardDescription>
@@ -402,7 +437,7 @@ export default function CVPage() {
                 </Card>
 
                 {/* Masters */}
-                <Card className="border-l-4 border-white/50 bg-slate-800/50 backdrop-blur-sm hover:translate-y-[-4px] hover:translate-x-[-4px] transition-all duration-300 shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)] hover:shadow-[12px_12px_24px_0px_rgba(0,0,0,0.5)]">
+                <Card className="border-l-4 border-white/50 bg-slate-800/50 backdrop-blur-sm shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)]">
                   <CardHeader className="pb-4">
                     <CardTitle className="text-white">M.Sc. Medical Informatics</CardTitle>
                     <CardDescription>
@@ -419,7 +454,7 @@ export default function CVPage() {
                 </Card>
 
                 {/* Bachelors */}
-                <Card className="border-l-4 border-white/50 bg-slate-800/50 backdrop-blur-sm hover:translate-y-[-4px] hover:translate-x-[-4px] transition-all duration-300 shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)] hover:shadow-[12px_12px_24px_0px_rgba(0,0,0,0.5)]">
+                <Card className="border-l-4 border-white/50 bg-slate-800/50 backdrop-blur-sm shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)]">
                   <CardHeader className="pb-4">
                     <CardTitle className="text-white">B.Sc. Medical Engineering</CardTitle>
                     <CardDescription>
@@ -437,30 +472,6 @@ export default function CVPage() {
               </div>
             </section>
 
-            {/* Voluntary Work */}
-            <section>
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center">
-                  <Heart className="w-6 h-6 text-white" />
-                </div>
-                <h2 className="text-2xl font-bold text-white">Voluntary Work</h2>
-              </div>
-              <div className="space-y-4">
-                <Card className="border-l-4 border-white/20 bg-slate-800/50 backdrop-blur-sm hover:translate-y-[-4px] hover:translate-x-[-4px] transition-all duration-300 shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)] hover:shadow-[12px_12px_24px_0px_rgba(0,0,0,0.5)]">
-                  <CardHeader className="pb-4">
-                    <CardTitle className="text-white">Board Member and Consultant</CardTitle>
-                    <CardDescription>
-                      <div className="flex items-center gap-2 text-sm text-slate-400">
-                        <Calendar className="w-4 h-4" />
-                        December 2024 - Present
-                        <Building2 className="w-4 h-4 ml-2" />
-                        DKFZ Consulting Club
-                      </div>
-                    </CardDescription>
-                  </CardHeader>
-                </Card>
-              </div>
-            </section>
 
             {/* Awards & Honors */}
             <section>
@@ -471,27 +482,33 @@ export default function CVPage() {
                 <h2 className="text-2xl font-bold text-white">Awards & Honors</h2>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <div className="bg-slate-800/50 backdrop-blur-sm p-3 rounded-lg border-l-4 border-white/20 hover:translate-y-[-2px] transition-all duration-300">
-                  <div className="text-white text-sm font-medium">Travel Scholarship (Stockholm)</div>
+                <div className="bg-slate-800/50 backdrop-blur-sm p-3 rounded-lg border-l-4 border-white/20 shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)]">
+                  <div className="text-white text-sm font-medium">Travel Scholarship</div>
                   <div className="text-slate-400 text-xs mt-1 flex items-center gap-2">
                     <Calendar className="w-3 h-3" />
                     April 2023
                     <Building2 className="w-3 h-3" />
                     HIDSS4Health
                   </div>
+                  <div className="text-slate-300 text-xs mt-1">
+                    Travel scholarship provided by HIDSS4Health for my research stay at Karolinska Institutet, Stockholm.
+                  </div>
                 </div>
 
-                <div className="bg-slate-800/50 backdrop-blur-sm p-3 rounded-lg border-l-4 border-white/20 hover:translate-y-[-2px] transition-all duration-300">
-                  <div className="text-white text-sm font-medium">CHILI GmbH Prize for Best Graduate</div>
+                <div className="bg-slate-800/50 backdrop-blur-sm p-3 rounded-lg border-l-4 border-white/20 shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)]">
+                  <div className="text-white text-sm font-medium">Best Graduate</div>
                   <div className="text-slate-400 text-xs mt-1 flex items-center gap-2">
                     <Calendar className="w-3 h-3" />
                     October 2020
                     <Building2 className="w-3 h-3" />
                     CHILI GmbH
                   </div>
+                  <div className="text-slate-300 text-xs mt-1">
+                    Prize for best graduate in Medical informatics at Heidelberg University 2020.
+                  </div>
                 </div>
 
-                <div className="bg-slate-800/50 backdrop-blur-sm p-3 rounded-lg border-l-4 border-white/20 hover:translate-y-[-2px] transition-all duration-300">
+                <div className="bg-slate-800/50 backdrop-blur-sm p-3 rounded-lg border-l-4 border-white/20 shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)]">
                   <div className="text-white text-sm font-medium">Company Scholarship</div>
                   <div className="text-slate-400 text-xs mt-1 flex items-center gap-2">
                     <Calendar className="w-3 h-3" />
@@ -500,7 +517,7 @@ export default function CVPage() {
                     DÜRR DENTAL SE
                   </div>
                   <div className="text-slate-300 text-xs mt-1">
-                    One-year scholarship for students in computer science
+                    One-year scholarship for students in computer science at Heidelberg University.
                   </div>
                 </div>
               </div>
@@ -519,7 +536,7 @@ export default function CVPage() {
                 <div className="space-y-3">
                   <h3 className="text-lg font-semibold text-white mb-2">2024</h3>
                   <div className="space-y-2">
-                    <div className="bg-slate-800/50 backdrop-blur-sm p-3 rounded-lg border-l-4 border-white/20 hover:translate-y-[-2px] transition-all duration-300">
+                    <div className="bg-slate-800/50 backdrop-blur-sm p-3 rounded-lg border-l-4 border-white/20 shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)]">
                       <div className="text-white text-sm font-medium">Helmholtz Summer School: From Data to Knowledge</div>
                       <div className="text-slate-400 text-xs mt-1 flex items-center gap-2">
                         <Calendar className="w-3 h-3" />
@@ -528,7 +545,7 @@ export default function CVPage() {
                         Helmholtz Information & Data Science Academy
                       </div>
                     </div>
-                    <div className="bg-slate-800/50 backdrop-blur-sm p-3 rounded-lg border-l-4 border-white/20 hover:translate-y-[-2px] transition-all duration-300">
+                    <div className="bg-slate-800/50 backdrop-blur-sm p-3 rounded-lg border-l-4 border-white/20 shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)]">
                       <div className="text-white text-sm font-medium">Google Advanced Data Analytics</div>
                       <div className="text-slate-400 text-xs mt-1 flex items-center gap-2">
                         <Calendar className="w-3 h-3" />
@@ -537,7 +554,7 @@ export default function CVPage() {
                         Google
                       </div>
                     </div>
-                    <div className="bg-slate-800/50 backdrop-blur-sm p-3 rounded-lg border-l-4 border-white/20 hover:translate-y-[-2px] transition-all duration-300">
+                    <div className="bg-slate-800/50 backdrop-blur-sm p-3 rounded-lg border-l-4 border-white/20 shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)]">
                       <div className="text-white text-sm font-medium">Management Consulting Specialization</div>
                       <div className="text-slate-400 text-xs mt-1 flex items-center gap-2">
                         <Calendar className="w-3 h-3" />
@@ -546,7 +563,7 @@ export default function CVPage() {
                         Emory University
                       </div>
                     </div>
-                    <div className="bg-slate-800/50 backdrop-blur-sm p-3 rounded-lg border-l-4 border-white/20 hover:translate-y-[-2px] transition-all duration-300">
+                    <div className="bg-slate-800/50 backdrop-blur-sm p-3 rounded-lg border-l-4 border-white/20 shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)]">
                       <div className="text-white text-sm font-medium">DKFZ International PhD Program</div>
                       <div className="text-slate-400 text-xs mt-1 flex items-center gap-2">
                         <Calendar className="w-3 h-3" />
@@ -555,7 +572,7 @@ export default function CVPage() {
                         DKFZ
                       </div>
                     </div>
-                    <div className="bg-slate-800/50 backdrop-blur-sm p-3 rounded-lg border-l-4 border-white/20 hover:translate-y-[-2px] transition-all duration-300">
+                    <div className="bg-slate-800/50 backdrop-blur-sm p-3 rounded-lg border-l-4 border-white/20 shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)]">
                       <div className="text-white text-sm font-medium">Continuous Integration (CI)</div>
                       <div className="text-slate-400 text-xs mt-1 flex items-center gap-2">
                         <Calendar className="w-3 h-3" />
@@ -564,7 +581,7 @@ export default function CVPage() {
                         HIDA
                       </div>
                     </div>
-                    <div className="bg-slate-800/50 backdrop-blur-sm p-3 rounded-lg border-l-4 border-white/20 hover:translate-y-[-2px] transition-all duration-300">
+                    <div className="bg-slate-800/50 backdrop-blur-sm p-3 rounded-lg border-l-4 border-white/20 shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)]">
                       <div className="text-white text-sm font-medium">HIDSS4Health PhD Program</div>
                       <div className="text-slate-400 text-xs mt-1 flex items-center gap-2">
                         <Calendar className="w-3 h-3" />
@@ -580,7 +597,7 @@ export default function CVPage() {
                 <div className="space-y-3">
                   <h3 className="text-lg font-semibold text-white mb-2">2022-2023</h3>
                   <div className="space-y-2">
-                    <div className="bg-slate-800/50 backdrop-blur-sm p-3 rounded-lg border-l-4 border-white/20 hover:translate-y-[-2px] transition-all duration-300">
+                    <div className="bg-slate-800/50 backdrop-blur-sm p-3 rounded-lg border-l-4 border-white/20 shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)]">
                       <div className="text-white text-sm font-medium">Effective Visual Communication of Science</div>
                       <div className="text-slate-400 text-xs mt-1 flex items-center gap-2">
                         <Calendar className="w-3 h-3" />
@@ -589,7 +606,7 @@ export default function CVPage() {
                         Seyens
                       </div>
                     </div>
-                    <div className="bg-slate-800/50 backdrop-blur-sm p-3 rounded-lg border-l-4 border-white/20 hover:translate-y-[-2px] transition-all duration-300">
+                    <div className="bg-slate-800/50 backdrop-blur-sm p-3 rounded-lg border-l-4 border-white/20 shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)]">
                       <div className="text-white text-sm font-medium">Deep Learning with TensorFlow 2</div>
                       <div className="text-slate-400 text-xs mt-1 flex items-center gap-2">
                         <Calendar className="w-3 h-3" />
@@ -598,7 +615,7 @@ export default function CVPage() {
                         365 Data Science
                       </div>
                     </div>
-                    <div className="bg-slate-800/50 backdrop-blur-sm p-3 rounded-lg border-l-4 border-white/20 hover:translate-y-[-2px] transition-all duration-300">
+                    <div className="bg-slate-800/50 backdrop-blur-sm p-3 rounded-lg border-l-4 border-white/20 shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)]">
                       <div className="text-white text-sm font-medium">Product Management for AI & Data Science</div>
                       <div className="text-slate-400 text-xs mt-1 flex items-center gap-2">
                         <Calendar className="w-3 h-3" />
@@ -607,7 +624,7 @@ export default function CVPage() {
                         365 Data Science
                       </div>
                     </div>
-                    <div className="bg-slate-800/50 backdrop-blur-sm p-3 rounded-lg border-l-4 border-white/20 hover:translate-y-[-2px] transition-all duration-300">
+                    <div className="bg-slate-800/50 backdrop-blur-sm p-3 rounded-lg border-l-4 border-white/20 shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)]">
                       <div className="text-white text-sm font-medium">SQL</div>
                       <div className="text-slate-400 text-xs mt-1 flex items-center gap-2">
                         <Calendar className="w-3 h-3" />
@@ -623,7 +640,7 @@ export default function CVPage() {
                 <div className="space-y-3">
                   <h3 className="text-lg font-semibold text-white mb-2">2019-2021</h3>
                   <div className="space-y-2">
-                    <div className="bg-slate-800/50 backdrop-blur-sm p-3 rounded-lg border-l-4 border-white/20 hover:translate-y-[-2px] transition-all duration-300">
+                    <div className="bg-slate-800/50 backdrop-blur-sm p-3 rounded-lg border-l-4 border-white/20 shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)]">
                       <div className="text-white text-sm font-medium">CCE Summer School in Translational Cancer Research</div>
                       <div className="text-slate-400 text-xs mt-1 flex items-center gap-2">
                         <Calendar className="w-3 h-3" />
@@ -632,7 +649,7 @@ export default function CVPage() {
                         Cancer Core Europe
                       </div>
                     </div>
-                    <div className="bg-slate-800/50 backdrop-blur-sm p-3 rounded-lg border-l-4 border-white/20 hover:translate-y-[-2px] transition-all duration-300">
+                    <div className="bg-slate-800/50 backdrop-blur-sm p-3 rounded-lg border-l-4 border-white/20 shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)]">
                       <div className="text-white text-sm font-medium">Introduction to Genomic Technologies</div>
                       <div className="text-slate-400 text-xs mt-1 flex items-center gap-2">
                         <Calendar className="w-3 h-3" />
@@ -641,7 +658,7 @@ export default function CVPage() {
                         Johns Hopkins University
                       </div>
                     </div>
-                    <div className="bg-slate-800/50 backdrop-blur-sm p-3 rounded-lg border-l-4 border-white/20 hover:translate-y-[-2px] transition-all duration-300">
+                    <div className="bg-slate-800/50 backdrop-blur-sm p-3 rounded-lg border-l-4 border-white/20 shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)]">
                       <div className="text-white text-sm font-medium">Neural Networks and Deep Learning</div>
                       <div className="text-slate-400 text-xs mt-1 flex items-center gap-2">
                         <Calendar className="w-3 h-3" />
@@ -650,7 +667,7 @@ export default function CVPage() {
                         DeepLearning.AI
                       </div>
                     </div>
-                    <div className="bg-slate-800/50 backdrop-blur-sm p-3 rounded-lg border-l-4 border-white/20 hover:translate-y-[-2px] transition-all duration-300">
+                    <div className="bg-slate-800/50 backdrop-blur-sm p-3 rounded-lg border-l-4 border-white/20 shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)]">
                       <div className="text-white text-sm font-medium">Data Science in Stratified Healthcare</div>
                       <div className="text-slate-400 text-xs mt-1 flex items-center gap-2">
                         <Calendar className="w-3 h-3" />
@@ -659,7 +676,7 @@ export default function CVPage() {
                         University of Edinburgh
                       </div>
                     </div>
-                    <div className="bg-slate-800/50 backdrop-blur-sm p-3 rounded-lg border-l-4 border-white/20 hover:translate-y-[-2px] transition-all duration-300">
+                    <div className="bg-slate-800/50 backdrop-blur-sm p-3 rounded-lg border-l-4 border-white/20 shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)]">
                       <div className="text-white text-sm font-medium">ZML Winter School on Machine Learning</div>
                       <div className="text-slate-400 text-xs mt-1 flex items-center gap-2">
                         <Calendar className="w-3 h-3" />

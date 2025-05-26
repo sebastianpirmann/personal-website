@@ -69,10 +69,10 @@ export default function PublicationsPage() {
 
           <div className="space-y-6">
             {publications.map((publication, index) => (
-              <Card key={index} className="border-l-4 border-white/20 bg-slate-800/50 backdrop-blur-sm hover:translate-y-[-4px] hover:translate-x-[-4px] transition-all duration-300 shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)] hover:shadow-[12px_12px_24px_0px_rgba(0,0,0,0.5)]">
+              <Card key={index} className="border-l-4 border-white/20 bg-slate-800/50 backdrop-blur-sm shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)]">
                 <CardHeader className="pb-4">
                   <div className="flex items-start justify-between">
-                    <div className="space-y-1">
+                    <div className="space-y-1 flex-1">
                       <CardTitle className="text-white text-lg">{publication.title}</CardTitle>
                       <CardDescription>
                         <div className="flex items-center gap-2 text-sm text-slate-400">
@@ -83,19 +83,14 @@ export default function PublicationsPage() {
                         </div>
                       </CardDescription>
                     </div>
-                    <Badge variant="outline" className="ml-2 text-xs">
-                      {publication.type}
-                    </Badge>
+                    <Button variant="ghost" size="sm" className="text-sky-400 hover:text-sky-300 whitespace-nowrap" asChild>
+                      <a href={publication.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                        <span>View Publication</span>
+                        <ExternalLink className="w-4 h-4" />
+                      </a>
+                    </Button>
                   </div>
                 </CardHeader>
-                <CardContent className="pt-0">
-                  <Button variant="ghost" size="sm" className="text-sky-400 hover:text-sky-300" asChild>
-                    <a href={publication.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                      <span>View Publication</span>
-                      <ExternalLink className="w-4 h-4" />
-                    </a>
-                  </Button>
-                </CardContent>
               </Card>
             ))}
           </div>
