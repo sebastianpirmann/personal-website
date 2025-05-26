@@ -26,7 +26,6 @@ import {
   Zap,
 } from "lucide-react"
 import Link from "next/link"
-import { Navigation } from "./components/Navigation"
 import Image from "next/image"
 
 export const metadata: Metadata = {
@@ -41,11 +40,8 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
-      {/* Header */}
-      <Navigation />
-
       {/* Hero Section */}
-      <section className="relative overflow-hidden min-h-[calc(100vh-4rem)] flex items-center">
+      <section className="relative overflow-hidden min-h-[calc(100vh-4rem)] flex items-center pt-24">
         <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950"></div>
         <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))] opacity-20"></div>
         
@@ -63,15 +59,12 @@ export default function HomePage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto">
               <div className="space-y-6">
-                <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight tracking-tight text-center">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight text-center">
                   Transforming Biomedical Data into Insights
                 </h2>
                 <div className="space-y-6 text-justify">
                   <p className="text-lg sm:text-xl text-slate-300 leading-relaxed">
-                    As a Bioinformatics Data Scientist at DKFZ, I'm passionate about developing cutting-edge solutions for research in oncology and pharmacogenomics. Over the past 4 years, I've had the opportunity to work at the intersection of bioinformatics and oncology, translating biological data into insights.
-                  </p>
-                  <p className="text-lg sm:text-xl text-slate-300 leading-relaxed">
-                    My projects involve building pipelines for processing multi-omics data and applying data science and machine learning methods. It's incredibly rewarding to see how research contributes directly to patient care.
+                    As a Bioinformatics Data Scientist at the German Cancer Research Center (DKFZ), I'm passionate about developing software pipelines and analysing data for research in oncology and pharmacogenomics. Over the past 4 years, I've had the opportunity to work at the intersection of computer science and oncology, translating raw data into insights. My work involves processing and analysing biomedical data (e.g. multi-omics or imaging) and applying data science and machine learning methods. It's incredibly rewarding to see how this directly contributes to patient care in the precision oncology programs at DKFZ.
                   </p>
                   <p className="text-lg sm:text-xl text-slate-300 leading-relaxed">
                     Beyond my research, as a Board Member and Consultant for the DKFZ Life Science Consulting Club, I help our clients navigate scientific challenges and achieve their strategic goals.
@@ -142,8 +135,8 @@ export default function HomePage() {
                 <div className="w-12 sm:w-16 h-12 sm:h-16 bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform shadow-lg">
                   <GraduationCap className="w-6 sm:w-8 h-6 sm:h-8 text-sky-400" />
                 </div>
-                <CardTitle className="text-lg sm:text-xl text-white">CV & Experience</CardTitle>
-                <CardDescription className="text-sm text-slate-400"></CardDescription>
+                <CardTitle className="text-lg sm:text-xl text-white">Experience</CardTitle>
+                <CardDescription className="text-sm text-slate-400">Explore my work experience and educational background</CardDescription>
               </CardHeader>
               <CardContent className="pt-0 flex flex-col flex-1">
                 <div className="space-y-3 mb-6 flex-1">
@@ -154,10 +147,6 @@ export default function HomePage() {
                   <div className="flex items-center text-sm text-slate-400">
                     <div className="w-2 h-2 bg-slate-300 rounded-full mr-3 flex-shrink-0"></div>
                     PhD in Bioinformatics from Heidelberg University
-                  </div>
-                  <div className="flex items-center text-sm text-slate-400">
-                    <div className="w-2 h-2 bg-slate-300 rounded-full mr-3 flex-shrink-0"></div>
-                    Professional Training through DKFZ and HIDSS4Health PhD Programs
                   </div>
                 </div>
                 <Button variant="outline" className="w-full bg-slate-900/80 group-hover:bg-slate-800 text-sm border-slate-700 text-slate-100 hover:text-white hover:bg-slate-800/80 transition-all duration-200">
@@ -176,7 +165,7 @@ export default function HomePage() {
                   <BarChart3 className="w-6 sm:w-8 h-6 sm:h-8 text-sky-400" />
                 </div>
                 <CardTitle className="text-lg sm:text-xl text-white">Projects</CardTitle>
-                <CardDescription className="text-sm text-slate-400"></CardDescription>
+                <CardDescription className="text-sm text-slate-400">Discover current and past projects</CardDescription>
               </CardHeader>
               <CardContent className="pt-0 flex flex-col flex-1">
                 <div className="space-y-3 mb-6 flex-1">
@@ -190,7 +179,7 @@ export default function HomePage() {
                   </div>
                   <div className="flex items-center text-sm text-slate-400">
                     <div className="w-2 h-2 bg-slate-300 rounded-full mr-3 flex-shrink-0"></div>
-                    Pharmacogenomics and PrecisionOncology
+                    Pharmacogenomics and Precision Oncology
                   </div>
                 </div>
                 <Button variant="outline" className="w-full bg-sky-950/80 group-hover:bg-sky-900/80 text-sm border-sky-800 text-sky-200 hover:text-sky-100 hover:bg-sky-900 hover:border-sky-700 transition-all duration-200">
@@ -208,8 +197,8 @@ export default function HomePage() {
                 <div className="w-12 sm:w-16 h-12 sm:h-16 bg-gradient-to-br from-blue-900 to-blue-800 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform shadow-lg">
                   <BookOpen className="w-6 sm:w-8 h-6 sm:h-8 text-blue-400" />
                 </div>
-                <CardTitle className="text-lg sm:text-xl text-white">Publications</CardTitle>
-                <CardDescription className="text-sm text-slate-400">Academic publications and research contributions</CardDescription>
+                <CardTitle className="text-lg sm:text-xl text-white">Research</CardTitle>
+                <CardDescription className="text-sm text-slate-400">See my contributionss to academic publications</CardDescription>
               </CardHeader>
               <CardContent className="pt-0 flex flex-col flex-1">
                 <div className="space-y-3 mb-6 flex-1">
@@ -239,22 +228,18 @@ export default function HomePage() {
                 </div>
                 <CardTitle className="text-lg sm:text-xl text-white">Consulting</CardTitle>
                 <CardDescription className="text-sm text-slate-400">
-                  My work as a Board Member and Consultant for the DKFZ Life Science Consulting Club
+                  Explore my work as a Board Member and Consultant for the DKFZ Life Science Consulting Club
                 </CardDescription>
               </CardHeader>
               <CardContent className="pt-0 flex flex-col flex-1">
                 <div className="space-y-3 mb-6 flex-1">
                   <div className="flex items-center text-sm text-slate-400">
                     <div className="w-2 h-2 bg-slate-300 rounded-full mr-3 flex-shrink-0"></div>
+                    Sustainability in Life Scince and Publishing with BioRN
+                  </div>
+                  <div className="flex items-center text-sm text-slate-400">
+                    <div className="w-2 h-2 bg-slate-300 rounded-full mr-3 flex-shrink-0"></div>
                     Familymind.AI
-                  </div>
-                  <div className="flex items-center text-sm text-slate-400">
-                    <div className="w-2 h-2 bg-slate-300 rounded-full mr-3 flex-shrink-0"></div>
-                    Sustainability in Life Scince and Publishing
-                  </div>
-                  <div className="flex items-center text-sm text-slate-400">
-                    <div className="w-2 h-2 bg-slate-300 rounded-full mr-3 flex-shrink-0"></div>
-                    Technical Advisory
                   </div>
                 </div>
                 <Button variant="outline" className="w-full bg-slate-900/80 group-hover:bg-slate-800/80 text-sm border-slate-700 text-slate-200 hover:text-slate-100 hover:bg-slate-800 hover:border-slate-600 transition-all duration-200">
@@ -272,7 +257,7 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950"></div>
         <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))] opacity-20"></div>
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Let's Collaborate</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Let's Collaborate!</h2>
           <p className="text-lg sm:text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
             Interested in discussing research opportunities, collaborations, or consulting projects? I'd love to hear
             from you.
