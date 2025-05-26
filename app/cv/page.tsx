@@ -52,181 +52,184 @@ export default function CVPage() {
                 <h2 className="text-2xl font-bold text-white">Professional Experience</h2>
               </div>
               <div className="space-y-6">
-                {/* Current Role */}
-                <Card className="border-l-4 border-blue-600 bg-slate-900/50 backdrop-blur-sm">
-                  <CardHeader>
-                    <CardTitle className="text-white">Bioinformatics Data Scientist</CardTitle>
-                    <CardDescription>
-                      <div className="flex items-center gap-2 text-sm text-slate-400">
-                        <Calendar className="w-4 h-4" />
-                        June 2024 - Present
-                        <MapPin className="w-4 h-4 ml-2" />
-                        Munich, Germany
-                      </div>
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="space-y-4">
-                      <div className="flex items-center gap-2 text-slate-300">
-                        <Building2 className="w-4 h-4 text-slate-400" />
-                        <p>DKFZ German Cancer Research Center - Computational Oncology Group</p>
-                      </div>
-                      <div className="flex flex-wrap gap-2">
-                        <Badge variant="secondary" className="bg-slate-800 text-white border-white">Bioinformatics</Badge>
-                        <Badge variant="secondary" className="bg-slate-800 text-white border-white">Machine Learning</Badge>
-                        <Badge variant="secondary" className="bg-slate-800 text-white border-white">Data Science</Badge>
+                {/* DKFZ Group */}
+                <div className="relative">
+                  <div className="absolute left-[200px] top-0 bottom-0 w-0.5 bg-blue-600"></div>
+                  <div className="flex">
+                    <div className="w-[200px] pr-6">
+                      <div className="sticky top-24">
+                        <div className="flex items-center gap-2 text-slate-300 bg-slate-900/90 backdrop-blur-sm p-3 rounded-lg border border-blue-600/20">
+                          <Building2 className="w-5 h-5 text-blue-400 flex-shrink-0" />
+                          <p className="font-medium">DKFZ German Cancer Research Center</p>
+                        </div>
                       </div>
                     </div>
-                  </CardContent>
-                </Card>
+                    <div className="flex-1 space-y-6 pl-8">
+                      {/* Current Role */}
+                      <Card className="border-l-4 border-blue-600 bg-slate-800/50 backdrop-blur-sm hover:translate-y-[-4px] hover:translate-x-[-4px] transition-all duration-300 shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)] hover:shadow-[12px_12px_24px_0px_rgba(0,0,0,0.5)]">
+                        <CardHeader className="pb-2">
+                          <CardTitle className="text-white">Bioinformatics Data Scientist</CardTitle>
+                          <CardDescription>
+                            <div className="flex items-center gap-2 text-sm text-slate-400">
+                              <Calendar className="w-4 h-4" />
+                              June 2024 - Present
+                              <MapPin className="w-4 h-4 ml-2" />
+                              Munich, Germany
+                            </div>
+                          </CardDescription>
+                        </CardHeader>
+                        <CardContent>
+                          <div className="space-y-2">
+                            <div className="text-sm text-slate-300">
+                              <p>Computational Oncology Group</p>
+                            </div>
+                            <p className="text-sm text-slate-300">Leading the development of machine learning models for drug response prediction in cancer therapy. Implementing cloud-based bioinformatics pipelines for multi-omics data analysis.</p>
+                          </div>
+                        </CardContent>
+                      </Card>
 
-                {/* PhD Role */}
-                <Card className="border-l-4 border-blue-600 bg-slate-900/50 backdrop-blur-sm">
-                  <CardHeader>
-                    <CardTitle className="text-white">Bioinformatician / PhD Researcher</CardTitle>
-                    <CardDescription>
-                      <div className="flex items-center gap-2 text-sm text-slate-400">
-                        <Calendar className="w-4 h-4" />
-                        September 2020 - June 2024
-                        <MapPin className="w-4 h-4 ml-2" />
-                        Heidelberg, Germany
-                      </div>
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="space-y-4">
-                      <div className="flex items-center gap-2 text-slate-300">
-                        <Building2 className="w-4 h-4 text-slate-400" />
-                        <p>DKFZ German Cancer Research Center - Computational Oncology Group</p>
-                      </div>
-                      <div className="flex flex-wrap gap-2">
-                        <Badge variant="secondary" className="bg-slate-800 text-white border-white">NGS Data Analysis</Badge>
-                        <Badge variant="secondary" className="bg-slate-800 text-white border-white">Machine Learning</Badge>
-                        <Badge variant="secondary" className="bg-slate-800 text-white border-white">Nextflow</Badge>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
+                      {/* PhD Role */}
+                      <Card className="border-l-4 border-blue-600 bg-slate-800/50 backdrop-blur-sm hover:translate-y-[-4px] hover:translate-x-[-4px] transition-all duration-300 shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)] hover:shadow-[12px_12px_24px_0px_rgba(0,0,0,0.5)]">
+                        <CardHeader className="pb-2">
+                          <CardTitle className="text-white">Bioinformatician / PhD Researcher</CardTitle>
+                          <CardDescription>
+                            <div className="flex items-center gap-2 text-sm text-slate-400">
+                              <Calendar className="w-4 h-4" />
+                              September 2020 - June 2024
+                              <MapPin className="w-4 h-4 ml-2" />
+                              Heidelberg, Germany
+                            </div>
+                          </CardDescription>
+                        </CardHeader>
+                        <CardContent>
+                          <div className="space-y-2">
+                            <div className="text-sm text-slate-300">
+                              <p>Computational Oncology Group</p>
+                            </div>
+                            <p className="text-sm text-slate-300">Developed novel machine learning approaches for pharmacogenomic variant effect prediction. Successfully implemented and deployed analysis pipelines used by 800+ cancer patients.</p>
+                          </div>
+                        </CardContent>
+                      </Card>
 
-                {/* Karolinska Role */}
-                <Card className="border-l-4 border-red-900 bg-slate-900/50 backdrop-blur-sm">
-                  <CardHeader>
-                    <CardTitle className="text-white">Visiting PhD Researcher</CardTitle>
-                    <CardDescription>
-                      <div className="flex items-center gap-2 text-sm text-slate-400">
-                        <Calendar className="w-4 h-4" />
-                        April 2023 - June 2023
-                        <MapPin className="w-4 h-4 ml-2" />
-                        Stockholm, Sweden
-                      </div>
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="space-y-4">
-                      <div className="flex items-center gap-2 text-slate-300">
-                        <Building2 className="w-4 h-4 text-slate-400" />
-                        <p>Karolinska Institutet - Personalized Medicine and Drug Development Group</p>
-                      </div>
-                      <div className="flex flex-wrap gap-2">
-                        <Badge variant="secondary" className="bg-slate-800 text-white border-white">NGS Data Analysis</Badge>
-                        <Badge variant="secondary" className="bg-slate-800 text-white border-white">Machine Learning</Badge>
-                        <Badge variant="secondary" className="bg-slate-800 text-white border-white">Pharmacogenomics</Badge>
-                      </div>
+                      {/* Research Assistant */}
+                      <Card className="border-l-4 border-blue-600 bg-slate-800/50 backdrop-blur-sm hover:translate-y-[-4px] hover:translate-x-[-4px] transition-all duration-300 shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)] hover:shadow-[12px_12px_24px_0px_rgba(0,0,0,0.5)]">
+                        <CardHeader className="pb-2">
+                          <CardTitle className="text-white">Research Assistant / Master Student</CardTitle>
+                          <CardDescription>
+                            <div className="flex items-center gap-2 text-sm text-slate-400">
+                              <Calendar className="w-4 h-4" />
+                              September 2019 - April 2020
+                              <MapPin className="w-4 h-4 ml-2" />
+                              Heidelberg, Germany
+                            </div>
+                          </CardDescription>
+                        </CardHeader>
+                        <CardContent>
+                          <div className="space-y-2">
+                            <div className="text-sm text-slate-300">
+                              <p>Division of Intelligent Medical Systems</p>
+                            </div>
+                            <p className="text-sm text-slate-300">Researched and implemented deep learning models for real-time organ tracking in medical imaging. Achieved significant improvements in tracking accuracy and computational efficiency.</p>
+                          </div>
+                        </CardContent>
+                      </Card>
                     </div>
-                  </CardContent>
-                </Card>
+                  </div>
+                </div>
 
-                {/* Research Assistant */}
-                <Card className="border-l-4 border-blue-600 bg-slate-900/50 backdrop-blur-sm">
-                  <CardHeader>
-                    <CardTitle className="text-white">Research Assistant / Master Student</CardTitle>
-                    <CardDescription>
-                      <div className="flex items-center gap-2 text-sm text-slate-400">
-                        <Calendar className="w-4 h-4" />
-                        September 2019 - April 2020
-                        <MapPin className="w-4 h-4 ml-2" />
-                        Heidelberg, Germany
-                      </div>
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="space-y-4">
-                      <div className="flex items-center gap-2 text-slate-300">
-                        <Building2 className="w-4 h-4 text-slate-400" />
-                        <p>DKFZ German Cancer Research Center - Division of Intelligent Medical Systems</p>
-                      </div>
-                      <div className="flex flex-wrap gap-2">
-                        <Badge variant="secondary" className="bg-slate-800 text-white border-white">Computer Vision</Badge>
-                        <Badge variant="secondary" className="bg-slate-800 text-white border-white">PyTorch</Badge>
-                        <Badge variant="secondary" className="bg-slate-800 text-white border-white">Deep Learning</Badge>
-                        <Badge variant="secondary" className="bg-slate-800 text-white border-white">OpenCV</Badge>
+                {/* Karolinska Role - Standalone */}
+                <div className="relative">
+                  <div className="absolute left-[200px] top-0 bottom-0 w-0.5 bg-red-900"></div>
+                  <div className="flex">
+                    <div className="w-[200px] pr-6">
+                      <div className="sticky top-24">
+                        <div className="flex items-center gap-2 text-slate-300 bg-slate-900/90 backdrop-blur-sm p-3 rounded-lg border border-red-900/20">
+                          <Building2 className="w-5 h-5 text-red-400 flex-shrink-0" />
+                          <p className="font-medium">Karolinska Institutet</p>
+                        </div>
                       </div>
                     </div>
-                  </CardContent>
-                </Card>
+                    <div className="flex-1 pl-8">
+                      <Card className="border-l-4 border-red-900 bg-slate-800/50 backdrop-blur-sm hover:translate-y-[-4px] hover:translate-x-[-4px] transition-all duration-300 shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)] hover:shadow-[12px_12px_24px_0px_rgba(0,0,0,0.5)]">
+                        <CardHeader className="pb-2">
+                          <CardTitle className="text-white">Visiting PhD Researcher</CardTitle>
+                          <CardDescription>
+                            <div className="flex items-center gap-2 text-sm text-slate-400">
+                              <Calendar className="w-4 h-4" />
+                              April 2023 - June 2023
+                              <MapPin className="w-4 h-4 ml-2" />
+                              Stockholm, Sweden
+                            </div>
+                          </CardDescription>
+                        </CardHeader>
+                        <CardContent>
+                          <div className="space-y-2">
+                            <div className="text-sm text-slate-300">
+                              <p>Personalized Medicine and Drug Development Group</p>
+                            </div>
+                            <p className="text-sm text-slate-300">Collaborated on international research project combining genomics and drug response data. Established new methodologies for pharmacogenomic variant interpretation.</p>
+                          </div>
+                        </CardContent>
+                      </Card>
+                    </div>
+                  </div>
+                </div>
 
-                {/* Bachelor Student */}
-                <Card className="border-l-4 border-emerald-600 bg-slate-900/50 backdrop-blur-sm">
-                  <CardHeader>
-                    <CardTitle className="text-white">Working Student (Bachelor Thesis)</CardTitle>
-                    <CardDescription>
-                      <div className="flex items-center gap-2 text-sm text-slate-400">
-                        <Calendar className="w-4 h-4" />
-                        September 2017 - March 2018
-                        <MapPin className="w-4 h-4 ml-2" />
-                        Heidelberg, Germany
-                      </div>
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="space-y-4">
-                      <div className="flex items-center gap-2 text-slate-300">
-                        <Building2 className="w-4 h-4 text-slate-400" />
-                        <p>Mint Medical GmbH</p>
-                      </div>
-                      <div className="text-sm text-slate-300 space-y-2">
-                        <p>Bachelor thesis project in medical software development</p>
-                      </div>
-                      <div className="flex flex-wrap gap-2">
-                        <Badge variant="secondary" className="bg-slate-800 text-white border-white">C++</Badge>
-                        <Badge variant="secondary" className="bg-slate-800 text-white border-white">Medical Software</Badge>
-                        <Badge variant="secondary" className="bg-slate-800 text-white border-white">Software Development</Badge>
+                {/* Mint Medical Group */}
+                <div className="relative">
+                  <div className="absolute left-[200px] top-0 bottom-0 w-0.5 bg-emerald-600"></div>
+                  <div className="flex">
+                    <div className="w-[200px] pr-6">
+                      <div className="sticky top-24">
+                        <div className="flex items-center gap-2 text-slate-300 bg-slate-900/90 backdrop-blur-sm p-3 rounded-lg border border-emerald-600/20">
+                          <Building2 className="w-5 h-5 text-emerald-400 flex-shrink-0" />
+                          <p className="font-medium">Mint Medical GmbH</p>
+                        </div>
                       </div>
                     </div>
-                  </CardContent>
-                </Card>
+                    <div className="flex-1 space-y-6 pl-8">
+                      {/* Bachelor Student */}
+                      <Card className="border-l-4 border-emerald-600 bg-slate-800/50 backdrop-blur-sm hover:translate-y-[-4px] hover:translate-x-[-4px] transition-all duration-300 shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)] hover:shadow-[12px_12px_24px_0px_rgba(0,0,0,0.5)]">
+                        <CardHeader className="pb-2">
+                          <CardTitle className="text-white">Working Student (Bachelor Thesis)</CardTitle>
+                          <CardDescription>
+                            <div className="flex items-center gap-2 text-sm text-slate-400">
+                              <Calendar className="w-4 h-4" />
+                              September 2017 - March 2018
+                              <MapPin className="w-4 h-4 ml-2" />
+                              Heidelberg, Germany
+                            </div>
+                          </CardDescription>
+                        </CardHeader>
+                        <CardContent>
+                          <div className="space-y-2">
+                            <p className="text-sm text-slate-300">Developed and implemented new features for medical imaging software. Successfully integrated automated image analysis algorithms into the production environment.</p>
+                          </div>
+                        </CardContent>
+                      </Card>
 
-                {/* Mint Medical Intern */}
-                <Card className="border-l-4 border-emerald-600 bg-slate-900/50 backdrop-blur-sm">
-                  <CardHeader>
-                    <CardTitle className="text-white">Software Development Intern</CardTitle>
-                    <CardDescription>
-                      <div className="flex items-center gap-2 text-sm text-slate-400">
-                        <Calendar className="w-4 h-4" />
-                        August 2016 - February 2017
-                        <MapPin className="w-4 h-4 ml-2" />
-                        Heidelberg, Germany
-                      </div>
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="space-y-4">
-                      <div className="flex items-center gap-2 text-slate-300">
-                        <Building2 className="w-4 h-4 text-slate-400" />
-                        <p>Mint Medical GmbH</p>
-                      </div>
-                      <div className="text-sm text-slate-300 space-y-2">
-                        <p>Implementing C++ components in the mint lesion radiology software using Scrum methodology</p>
-                      </div>
-                      <div className="flex flex-wrap gap-2">
-                        <Badge variant="secondary" className="bg-slate-800 text-white border-white">C++</Badge>
-                        <Badge variant="secondary" className="bg-slate-800 text-white border-white">Scrum</Badge>
-                        <Badge variant="secondary" className="bg-slate-800 text-white border-white">Agile Development</Badge>
-                        <Badge variant="secondary" className="bg-slate-800 text-white border-white">Radiology Software</Badge>
-                      </div>
+                      {/* Mint Medical Intern */}
+                      <Card className="border-l-4 border-emerald-600 bg-slate-800/50 backdrop-blur-sm hover:translate-y-[-4px] hover:translate-x-[-4px] transition-all duration-300 shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)] hover:shadow-[12px_12px_24px_0px_rgba(0,0,0,0.5)]">
+                        <CardHeader className="pb-2">
+                          <CardTitle className="text-white">Software Development Intern</CardTitle>
+                          <CardDescription>
+                            <div className="flex items-center gap-2 text-sm text-slate-400">
+                              <Calendar className="w-4 h-4" />
+                              August 2016 - February 2017
+                              <MapPin className="w-4 h-4 ml-2" />
+                              Heidelberg, Germany
+                            </div>
+                          </CardDescription>
+                        </CardHeader>
+                        <CardContent>
+                          <div className="space-y-2">
+                            <p className="text-sm text-slate-300">Contributed to the development of mint lesion radiology software using C++ and Scrum methodology. Implemented key features that improved workflow efficiency for radiologists.</p>
+                          </div>
+                        </CardContent>
+                      </Card>
                     </div>
-                  </CardContent>
-                </Card>
+                  </div>
+                </div>
               </div>
             </section>
 
@@ -240,7 +243,7 @@ export default function CVPage() {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 {/* Soft Skills */}
-                <Card className="border-l-4 border-sky-600 bg-slate-900/50 backdrop-blur-sm h-full">
+                <Card className="border-l-4 border-sky-600 bg-slate-800/50 backdrop-blur-sm h-full hover:translate-y-[-4px] hover:translate-x-[-4px] transition-all duration-300 shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)] hover:shadow-[12px_12px_24px_0px_rgba(0,0,0,0.5)]">
                   <CardHeader className="pb-4">
                     <CardTitle className="text-white flex items-center gap-2 text-lg">
                       <Brain className="w-5 h-5 text-sky-400" />
@@ -274,7 +277,7 @@ export default function CVPage() {
                 </Card>
 
                 {/* Technical Skills */}
-                <Card className="border-l-4 border-blue-600 bg-slate-900/50 backdrop-blur-sm h-full">
+                <Card className="border-l-4 border-blue-600 bg-slate-800/50 backdrop-blur-sm h-full hover:translate-y-[-4px] hover:translate-x-[-4px] transition-all duration-300 shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)] hover:shadow-[12px_12px_24px_0px_rgba(0,0,0,0.5)]">
                   <CardHeader className="pb-4">
                     <CardTitle className="text-white flex items-center gap-2 text-lg">
                       <Code2 className="w-5 h-5 text-blue-400" />
@@ -304,7 +307,7 @@ export default function CVPage() {
                 </Card>
 
                 {/* Data Science Skills */}
-                <Card className="border-l-4 border-purple-600 bg-slate-900/50 backdrop-blur-sm h-full">
+                <Card className="border-l-4 border-purple-600 bg-slate-800/50 backdrop-blur-sm h-full hover:translate-y-[-4px] hover:translate-x-[-4px] transition-all duration-300 shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)] hover:shadow-[12px_12px_24px_0px_rgba(0,0,0,0.5)]">
                   <CardHeader className="pb-4">
                     <CardTitle className="text-white flex items-center gap-2 text-lg">
                       <Database className="w-5 h-5 text-purple-400" />
@@ -345,7 +348,7 @@ export default function CVPage() {
               </div>
               <div className="space-y-4">
                 {/* PhD */}
-                <Card className="border-l-4 border-white/50 bg-slate-900/50 backdrop-blur-sm">
+                <Card className="border-l-4 border-white/50 bg-slate-800/50 backdrop-blur-sm hover:translate-y-[-4px] hover:translate-x-[-4px] transition-all duration-300 shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)] hover:shadow-[12px_12px_24px_0px_rgba(0,0,0,0.5)]">
                   <CardHeader className="pb-4">
                     <CardTitle className="text-white">Ph.D. (Dr. rer. nat.) in Bioinformatics</CardTitle>
                     <CardDescription>
@@ -362,7 +365,7 @@ export default function CVPage() {
                 </Card>
 
                 {/* Masters */}
-                <Card className="border-l-4 border-white/50 bg-slate-900/50 backdrop-blur-sm">
+                <Card className="border-l-4 border-white/50 bg-slate-800/50 backdrop-blur-sm hover:translate-y-[-4px] hover:translate-x-[-4px] transition-all duration-300 shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)] hover:shadow-[12px_12px_24px_0px_rgba(0,0,0,0.5)]">
                   <CardHeader className="pb-4">
                     <CardTitle className="text-white">M.Sc. Medical Informatics</CardTitle>
                     <CardDescription>
@@ -379,7 +382,7 @@ export default function CVPage() {
                 </Card>
 
                 {/* Bachelors */}
-                <Card className="border-l-4 border-white/50 bg-slate-900/50 backdrop-blur-sm">
+                <Card className="border-l-4 border-white/50 bg-slate-800/50 backdrop-blur-sm hover:translate-y-[-4px] hover:translate-x-[-4px] transition-all duration-300 shadow-[6px_6px_12px_0px_rgba(0,0,0,0.4)] hover:shadow-[12px_12px_24px_0px_rgba(0,0,0,0.5)]">
                   <CardHeader className="pb-4">
                     <CardTitle className="text-white">B.Sc. Medical Engineering</CardTitle>
                     <CardDescription>
